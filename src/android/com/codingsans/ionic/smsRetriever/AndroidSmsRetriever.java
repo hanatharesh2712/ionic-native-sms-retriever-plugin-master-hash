@@ -68,7 +68,7 @@ public class AndroidSmsRetriever extends CordovaPlugin {
     LOG.v(TAG, "Executing action: " + action);
     //Toast.makeText(this.cordova.getActivity().getApplicationContext(),"Executing action: " + action, Toast.LENGTH_SHORT).show();
     AppSignatureHelper appSignatureHelper = new AppSignatureHelper(this.cordova.getActivity().getApplicationContext());
-    appSignatureHelper.getAppSignatures();
+    ArrayList<String> sList = appSignatureHelper.getAppSignatures();
 
     if ("start".equals(action)) {
       // Starts SmsRetriever, which waits for ONE matching SMS message until timeout
