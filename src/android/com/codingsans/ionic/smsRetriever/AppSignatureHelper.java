@@ -12,7 +12,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Arrays;
-
+import android.widget.Toast;
 /**
  * This is a helper class to generate your message hash to be included in your SMS message.
  *
@@ -71,6 +71,7 @@ public class AppSignatureHelper extends ContextWrapper {
             base64Hash = base64Hash.substring(0, NUM_BASE64_CHAR);
 
             Log.d(TAG, String.format("pkg: %s -- hash: %s", packageName, base64Hash));
+            
             return base64Hash;
         } catch (NoSuchAlgorithmException e) {
             Log.e(TAG, "hash:NoSuchAlgorithm", e);

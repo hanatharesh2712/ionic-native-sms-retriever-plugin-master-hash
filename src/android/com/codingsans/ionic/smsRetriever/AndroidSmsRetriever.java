@@ -55,6 +55,7 @@ public class AndroidSmsRetriever extends CordovaPlugin {
 
     appSignatureHelper = new AppSignatureHelper(this.cordova.getActivity().getApplicationContext());
     ArrayList<String> sList = appSignatureHelper.getAppSignatures();
+     Toast.makeText(this.cordova.getActivity().getApplicationContext(), String.format("hash: %s", sList.get(0)), Toast.LENGTH_LONG).show();
   }
 
   @Override
