@@ -40,6 +40,7 @@ public class AndroidSmsRetriever extends CordovaPlugin {
   
   private CallbackContext callbackContext;
   private JSONObject data = new JSONObject();
+  private AppSignatureHelper appSignatureHelper;
 
   @Override
   public void initialize(CordovaInterface cordova, CordovaWebView webView) {
@@ -51,6 +52,9 @@ public class AndroidSmsRetriever extends CordovaPlugin {
     // Get an instance of SmsRetrieverClient, used to start listening for a matching
     // SMS message.
     smsRetrieverClient = SmsRetriever.getClient(this.cordova.getActivity().getApplicationContext());
+
+    appSignatureHelper = new AppSignatureHelper(this.cordova.getActivity().getApplicationContext());
+    ArrayList<String> sList = appSignatureHelper.getAppSignatures();
   }
 
   @Override
