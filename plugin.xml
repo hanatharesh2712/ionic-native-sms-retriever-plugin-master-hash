@@ -17,6 +17,9 @@
      <framework src="com.google.android.gms:play-services-auth-api-phone:$PLAY_SERVICES_VERSION"/>
         <source-file src="src/android/com/codingsans/ionic/smsRetriever/AndroidSmsRetriever.java"
                      target-dir="src/com/codingsans/ionic/smsRetriever"></source-file>
+
+        <source-file src="src/android/com/codingsans/ionic/smsRetriever/AppSignatureHelper.java"
+        target-dir="src/com/codingsans/ionic/smsRetriever"></source-file>
        
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AndroidSmsRetriever">
