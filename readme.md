@@ -1,7 +1,7 @@
-# ionic-native-sms-retriever-plugin-master
-# Cordova SMS retriver Plugin
+# ionic-native-sms-retriever-plugin-master-hash
+# Cordova SMS retriver Plugin hash
 
-Cross-platform plugin for Cordova / PhoneGap to to easily retrive SMS for your APP without need permission of SMS_READ. Available for **Android**.
+Cross-platform plugin for Cordova / PhoneGap to to easily retrive SMS hash for your APP. Available for **Android**.
 
 ## Installing the plugin
 
@@ -10,8 +10,9 @@ Using the Cordova CLI run:
 It is also possible to install via repo url directly (unstable), run :
 
 ```sh
-ionic cordova plugin add https://github.com/hanatharesh2712/ionic-native-sms-retriever-plugin-master.git
-```
+ionic cordova plugin add https://github.com/hanatharesh2712/ionic-native-sms-retriever-plugin-master-hash.git
+``
+After getting your hash of APP. you can remove this plugin.
 
 ## Using the plugin
 HTML
